@@ -21,18 +21,6 @@ header{
     font-weight: 700;
 }
 
-.first{
-    margin-top: 90px;
-    min-height: 600px;
-    padding: 100px 0;
-    background-image: url('../images/vaccine.jpg');
-    background-position: center;
-    color: white;
-    align-items: center;
-}
-.first h1, .first p{
-    color: white;
-}
 
 nav a {
     position: relative;

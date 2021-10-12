@@ -5,3 +5,17 @@
 .custom-image-1{
     max-height: 500px;
 }
+
+.first-section{
+    margin-top: 90px;
+    min-height: 600px;
+    padding: 100px 0;
+    background-image: url('../images/vaccine.jpg');
+    background-position: center;
+    color: white;
+    align-items: center;
+}
+
+.first-section h1, .first-section p{
+    color: white;
+}
