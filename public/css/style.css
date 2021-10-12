@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+
+header{
+    text-transform:uppercase;
+    height: 90px;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    background: white;
+}
+
+.title{
+    font-weight: 700;
+}
+
+nav a:hover{
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    transition: .1s;
+}
+.first{
+    margin-top: 90px;
+    min-height: 600px;
+    padding: 100px 0;
+    background-image: url('../images/vaccine.jpg');
+    background-position: center;
+    color: white;
+    align-items: center;
+}
+.first h1, .first p{
+    color: white;
+}
