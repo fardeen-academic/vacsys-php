@@ -1,21 +1,58 @@
-.p-custom-1{
-    padding-bottom: 6rem;
+.nav-item .btn{
+    color: white;
+    margin-left: 20px;
 }
-
-.custom-image-1{
-    max-height: 500px;
-}
-
-.first-section{
-    margin-top: 90px;
-    min-height: 600px;
-    padding: 100px 0;
-    background-image: url('../images/vaccine.jpg');
+.large_image{
+    background-image: url("../images/vaccine.jpg");
+    height: 700px;
+    width: 100%;
+    margin-top: 80px;
     background-position: center;
     color: white;
-    align-items: center;
+    padding: 200px;
+}
+.large_image button{
+    margin-right: 10px;
+}
+.large_image h1{
+    font-size: 3rem;
 }
 
-.first-section h1, .first-section p{
+.footer-logo img{
+    height: 24px;
+}
+
+.feature-icon img{
+    height: 2em;
+    width: 2em;
+}
+
+.card-menu{
+    position: relative;
+    margin-top: -150px;
+}
+
+.card-menu .card{
+    background-image: url('../images/vaccine4.jpg');
+    background-size: 400px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card-menu .card-header{
+    background-color: black;
+    opacity: 0.65;
+}
+
+.card-menu .card-header:hover{
+    background-color: #000912;
+    opacity: 1;
+    background-size: 400px;
+    transition: 0.5s;
+}
+
+.card-menu .card a{
+    opacity: 1;
     color: white;
+    text-decoration: none;
 }
