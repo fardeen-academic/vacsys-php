@@ -23,14 +23,14 @@
 
     <header class="">  
         <nav class="navbar navbar-expand-md navbar-light">
-        <a  href="#" class="title navbar-brand">VACSYS</a>
+        <a  href="/" class="title navbar-brand">VACSYS</a>
         <div class="navbar-link ms-auto">
             <ul class="navbar-nav text-center">
-            <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Status</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Vaccine Card</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Certificate</a></li>  
-            <li class="nav-item"><a href="#" class="nav-link btn btn-warning">Admin Portal</a></li>  
+            <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="status.php" class="nav-link">Status</a></li>
+            <li class="nav-item"><a href="vaccine-card.php" class="nav-link">Vaccine Card</a></li>
+            <li class="nav-item"><a href="certificate.php" class="nav-link">Certificate</a></li>  
+            <li class="nav-item"><a href="admin-login.php" target="_blank" class="nav-link btn btn-warning">Admin Portal</a></li>  
             </ul>
                
         </div>

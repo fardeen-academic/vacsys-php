@@ -15,26 +15,26 @@ include("templates/header.php");
 <div class="card-menu container px-4 py-5" id="custom-cards">
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
+      <div class="col" >
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-          <div class="card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <a href="#" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Register Now</a>
+          <div class="card1 card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <a href="register.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Register Now</a>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-          <div class="card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <a href="#" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Download Vaccine Card</a>
+          <div class="card2 card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <a href="vaccine-card.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Download Vaccine Card</a>
           </div>
         </div>
       </div>
 
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-          <div class="card-header d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <a href="#" class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Vaccine Certificate</a>
+          <div class="card3 card-header d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <a href="certificate.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Vaccine Certificate</a>
           </div>
         </div>
       </div>
