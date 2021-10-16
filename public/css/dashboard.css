@@ -96,4 +96,24 @@ body{
 
   .right-side{
     width: 80%;
+    padding-top: 100px;
+}
+
+.tab-pane h2{
+  margin-bottom: 50px;
+
+}
+.tab-pane table th, .tab-pane table td{
+  padding-left: 25px;
+}
+
+.tab-pane table th:last-child{
+  width: 200px;
+}
+.modal-body{
+  padding: 30px;
+}
+
+.modal-body h4{
+  width: 100%;
 }

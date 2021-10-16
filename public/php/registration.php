@@ -9,6 +9,11 @@
     $sql = "INSERT INTO member (nid, birthdate, name, phone, venue)
     VALUES ('{$nid}', '{$date}', '{$name}', '{$phone}', '{$venue}')";
     if (mysqli_query($conn, $sql)){
+        $fd = "INSERT INTO first_dose (id, dose_done) VALUES ('{$nid}', '0')";
+        $sd = "INSERT INTO second_dose (id, dose_done) VALUES ('{$nid}', '0')";
+        mysqli_query($conn, $fd);
+        mysqli_query($conn, $sd);
+        
         header("Location: ../success.php");
 exit();
     }

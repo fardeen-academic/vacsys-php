@@ -7,7 +7,7 @@
     <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom CSS-->
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/icons/css/all.css">
@@ -63,7 +63,19 @@
                     <!-- Tabs content -->
         <div class="tab-content">
         <div class="tab-pane fade show active" id="members" role="tabpanel">
-            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+            <h2 align="center">All Members</h2>
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>NID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Doses Done</th>
+                    <th>Update</th>
+                </tr>
+                <?php
+                include "php/dash.php";
+                ?>
+            </table>
         </div>
         <div class="tab-pane fade" id="dose1" role="tabpanel">
             <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
@@ -79,5 +91,28 @@
     </div>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+$(function(){
+    $(".updatemodal").click(function(){
+        $('#nid').val($(this).data('nid'));
+        $('#name').html($(this).data('name'));
+        $('#fdose').val($(this).data('fdose'));
+        $("#fdosedone").val($(this).data('fdosedone')).change();
+        $('#sdose').val($(this).data('sdose'));
+        $("#sdosedone").val($(this).data('sdosedone')).change();
+        $('#venue').val($(this).data('venue'));
+        $('#status').val($(this).data('status'));
+        
+
+        $("#update-form").modal("show");
+
+    });
+});
+</script>
+
+
 </body>
 </html>
