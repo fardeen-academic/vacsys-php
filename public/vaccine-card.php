@@ -8,7 +8,7 @@ include("templates/header.php");
 <div class="container">
   <!-- Form starts here -->
   <form class="needs-validation" id="register-form" novalidate>
-  <h2 class=" d-flex justify-content-center">Enter your information below to download vaccine card.</h2><br><br>
+  <h2 class=" d-flex justify-content-center">Enter your information below to download vaccine card.</h2><br>
   
   <!--Birth date information-->
   <div class="birthdateinfo" id="birthdateinfo">
