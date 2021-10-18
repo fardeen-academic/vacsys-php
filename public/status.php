@@ -14,14 +14,17 @@ include("templates/header.php");
   <div class="row d-flex justify-content-center">
       <div class="col-md-6 mb-2">
           <label for="" class="form-label">NID</label>
-          <input value="123456789" type="number" class="form-control form_data" id="nid" name="nid" placeholder="Enter your NID" required>
+          <input type="number" class="form-control form_data" id="nid" name="nid" placeholder="Enter your NID" required>
       </div>
   </div>  
 <br>
   <div class="row d-flex justify-content-center">
   <div class="col-md-2 mb-2">
         <label for="birth-date" class="form-label">Birth Date</label>
-        <input value="08" class="form-control form_data" type="number" name="bdate" max="31" id="birth-date" placeholder="DD" required>
+        <select name="bdate" id="bdate" class="form-select form_data" required>
+          <option value="">Choose..</option>
+          <?php include "templates/date.php"?>
+        </select>
         
       </div>
       <div class="col-md-2 mb-2">
@@ -29,7 +32,7 @@ include("templates/header.php");
         <select class="form-select form_data" id="birth-month" name="bmonth" required>
           <option value="">Choose...</option>
           <option value="01">January</option>
-          <option value="02" selected>February</option>
+          <option value="02">February</option>
           <option value="03">March</option>
           <option value="04">April</option>
           <option value="05">May</option>
@@ -44,7 +47,10 @@ include("templates/header.php");
       </div>
       <div class="col-md-2 mb-2">
         <label for="birth-year" class="form-label">Birth Year</label>
-        <input value="2000" class="form-control form_data" type="number" min="1900" name="byear" id="birth-year" placeholder="YYYY" required>
+        <select class="form-select form_data" name="byear" id="byear" required>
+          <option>Choose..</option>
+          <?php include "templates/year.php"?>
+        </select>
       </div>
     </div>
     <div class="row d-flex justify-content-center">

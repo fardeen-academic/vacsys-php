@@ -92,6 +92,13 @@
     margin-top: -20px;
 }
 
+#download-v-card-btn{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
 #register-form div.row{
     margin-bottom: 25px;
 }

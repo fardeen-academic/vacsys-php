@@ -25,15 +25,14 @@ var valid = false;
 var next1 = document.getElementById("next1");
 var month = document.getElementById("birth-month");
 var year = document.getElementById("birth-year");
-//var datewarning = new bootstrap.Modal(document.getElementById("date-warning"), {});
+datewarning = new bootstrap.Modal(document.getElementById("date-warning"), {});
 const personalinfo = document.getElementById("personal-info");
 personalinfo.style.display = "none";
 //datewarning.style.display= "none";
 
 next1.onclick = function(){
-    console.log("Next1 clicked");
+    console.log("Next clicked");
     if(year.value > 2000){
-        console.log("if trigger");
         //document.getElementById("birthdateinfo").style.display = 'none';
         //datewarning.style.display = 'block';
         datewarning.show();
