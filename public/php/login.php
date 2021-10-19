@@ -3,7 +3,7 @@
     include_once "config.php";
     $email = $_POST["email"];
     $password = $_POST["password"];
-    $sql = "SELECT `password` FROM `admin` WHERE username = 'admin@demo.com'";
+    $sql = "SELECT * FROM `admin` WHERE username = 'admin@demo.com'";
 
     $result = $conn->query($sql);
 
@@ -11,6 +11,7 @@
     // output data of each row
     while($row = $result->fetch_assoc()) {
         if($password == $row["password"]){
+            $_SESSION['email'] = $row['username'];
             header("Location: ../dashboard.php");
         }
         else{

@@ -11,6 +11,28 @@ include("templates/header.php");
     
 </div>
 
+<div class="container">
+  <div class="card card-cover shadow numbercard">
+    <table class="table table-borderless text-center">
+      <tr>
+        <td class="cctext" rowspan="2"><i class="fas fa-lg fa-headset" style="size: 5px;"></i><br>Hotline</td> 
+        <td class="ccnum">333</td>
+        <td class="ccnum">16263</td>
+        <td class="ccnum">10655</td>
+        <td class="ccnum">09666777222</td>
+        <td class="cctext" rowspan="2"><i class="fas fa-lg fa-headset" style="size: 5px;"></i><br>All Call Centers</td>
+      </tr>
+      <tr>
+      
+        <td class="cctext">National Call Center</td>
+        <td class="cctext">Health Portal</td>
+        <td class="cctext">IEDCR</td>
+        <td class="cctext">Covid-19 Telehealth</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
 
 <div class="card-menu container px-4 py-5" id="custom-cards">
 
@@ -18,7 +40,7 @@ include("templates/header.php");
       <div class="col" >
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
           <div class="card1 card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <a href="register.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Register Now</a>
+            <a href="register.php" class="text-white pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Register Now</a>
           </div>
         </div>
       </div>
@@ -26,7 +48,7 @@ include("templates/header.php");
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
           <div class="card2 card-header d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <a href="vaccine-card.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Download Vaccine Card</a>
+          <a href="vaccine-card.php" class="text-white pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Download Vaccine Card</a>
           </div>
         </div>
       </div>
@@ -34,10 +56,18 @@ include("templates/header.php");
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
           <div class="card3 card-header d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <a href="certificate.php" class="text-dark pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Vaccine Certificate</a>
+          <a href="certificate.php" class="text-white pt-5 mt-5 mb-4 display-6 lh-1 fw-bold stretched-link">Vaccine Certificate</a>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="card shadow largecard text-white">
+      <h2 class="fw-bold">Vaccinate Now</h2><br>
+      <a class="btn btn-primary" href="register.php">Register Now</a>
     </div>
   </div>
 

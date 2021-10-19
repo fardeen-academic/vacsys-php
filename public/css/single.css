@@ -29,52 +29,63 @@
 
 .card-menu{
     position: relative;
-    margin-top: -150px;
+    margin-top: 0px;
 }
 .card{
     border: 0px;
 }
 
 .card-menu .card{
-    /*background-image: url('../images/vaccine4.jpg');*/
+    background-image: url('/images/blackbg.jpg');
     background-size: 400px;
     background-position: center;
     border-radius: 10px;
-    color: black;
 }
 
 .card-menu .card a{
     opacity: 1;
     color: white;
     text-decoration: none;
+    background-size: 200%;
 }
-
-.card1{
-    background-color: #FFEFF3;
-    border: 0;
-}
-
-.card2{
-    background-color: #FFF8DD;
-}
-
-.card3{
-    background-color: #E4FFF4;
-}
-
 .card1:hover{
-    background-color: #fdd0dc;
+    background-color: #000;
     transition: 0.5s;
 }
 
 .card2:hover{
-    background-color: #ffea95;
+    background-color: #000;
     transition: 0.5s;
 }
 
 .card3:hover{
-    background-color: #b7ffe2;
+    background-color: #000;
     transition: 0.5s;
+}
+
+.numbercard{
+    margin-top: -60px;
+    padding: 20px 30px 0px 30px;
+}
+
+.ccnum{
+    color: rgb(0, 78, 0);
+}
+
+.cctext{
+    color: rgb(0, 22, 61);
+}
+
+.largecard{
+    background-image: url('/images/vaccine-dark.jpg');
+    background-position: center;
+    height: 350px;
+    border-radius: 10px;
+    padding: 125px 100px;
+}
+
+.largecard .btn{
+    width: max-content;
 }
 
 .date-warning{

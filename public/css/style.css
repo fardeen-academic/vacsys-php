@@ -78,7 +78,7 @@ nav .navbar-link a::before{
 }
 
 .footer{
-  position: fixed;
+  position: static;
   z-index: -1;
   background-color: white;
   bottom: 0;

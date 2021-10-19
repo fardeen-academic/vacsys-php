@@ -15,7 +15,7 @@ include("templates/header.php");
   <div class="row d-flex justify-content-center">
       <div class="col-md-6 mb-2">
           <label for="" class="form-label">NID</label>
-          <input value="123456789" type="number" class="form-control form_data" name="nid" placeholder="Enter your NID" required>
+          <input type="number" class="form-control form_data" name="nid" placeholder="Enter your NID" required>
           <div class="invalid-feedback">Please enter your NID.</div>
       </div>
   </div>  
@@ -35,7 +35,7 @@ include("templates/header.php");
         <select class="form-select form_data" name="bmonth" id="birth-month" required>
           <option value="">Choose...</option>
           <option value="01">January</option>
-          <option value="02" selected>February</option>
+          <option value="02">February</option>
           <option value="03">March</option>
           <option value="04">April</option>
           <option value="05">May</option>
