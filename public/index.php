@@ -6,7 +6,7 @@ include("templates/header.php");
     <h1>Vaccinate your family now</h1>
     <h2>Free vaccination program by VACSYS</h2><br>
     <p>Get two doses of free vaccination by registering on our vaccination program.</p><br>
-    <button type="button" class="btn btn-primary">Register Now</button>
+    <button type="button" class="btn btn-primary"><a class="text-white" style="text-decoration: none;" href="/register.php">Register Now</a></button>
     <button type="button" class="btn btn-light">Vaccine Certificate</button>
     
 </div>
