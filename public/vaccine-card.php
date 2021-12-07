@@ -19,7 +19,7 @@ include("templates/header.php");
           <div class="invalid-feedback">Please enter your NID.</div>
       </div>
   </div>  
-
+  <br>
   <div class="row d-flex justify-content-center">
   <div class="col-md-2 mb-2">
         <label for="birth-date" class="form-label">Birth Date</label>
@@ -58,6 +58,7 @@ include("templates/header.php");
         <div class="invalid-feedback">Please enter your correct birth year.</div>
       </div>
     </div>
+      <br>
       <br>
       <div class="row d-flex justify-content-center" id="">
       <div class="col-md-6 mb-2">
@@ -108,10 +109,8 @@ crossorigin='anonymous'></script>";
       document.getElementById('vcard-form').reset();
       if(ajax_request.responseText.substring(0,5) == 'error'){
         document.getElementById('error').innerHTML = ajax_request.responseText.substring(5,);
-        console.log("working 1");
       }else{
       document.getElementById('message').innerHTML = ajax_request.responseText;
-      console.log("working 2");
       }
       /*setTimeout(function(){
         document.getElementById('message').innerHTML = '';

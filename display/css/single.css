@@ -1,0 +1,127 @@
+.nav-item .btn{
+    color: white;
+    margin-left: 20px;
+}
+.large_image{
+    background-image: url("../images/vaccine.jpg");
+    height: 700px;
+    width: 100%;
+    margin-top: 80px;
+    background-position: center;
+    color: white;
+    padding: 200px;
+}
+.large_image button{
+    margin-right: 10px;
+}
+.large_image h1{
+    font-size: 3rem;
+}
+
+.footer-logo img{
+    height: 24px;
+}
+
+.feature-icon img{
+    height: 2em;
+    width: 2em;
+}
+
+.card-menu{
+    position: relative;
+    margin-top: 0px;
+}
+.card{
+    border: 0px;
+}
+
+.card-menu .card{
+    background-image: url('/images/blackbg.jpg');
+    background-size: 400px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card-menu .card a{
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+    background-size: 200%;
+}
+.card1:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.card2:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.card3:hover{
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.numbercard{
+    margin-top: -60px;
+    padding: 20px 30px 0px 30px;
+}
+
+.ccnum{
+    color: rgb(0, 78, 0);
+}
+
+.cctext{
+    color: rgb(0, 22, 61);
+}
+
+.largecard{
+    background-image: url('/images/vaccine-dark.jpg');
+    background-position: center;
+    height: 350px;
+    border-radius: 10px;
+    padding: 125px 100px;
+}
+
+.largecard .btn{
+    width: max-content;
+}
+
+.date-warning{
+    margin-top: 25px;
+}
+
+#register-form{
+    margin-top: 30px;
+}
+
+#next1{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#download-v-card-btn{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#register-form div.row{
+    margin-bottom: 25px;
+}
+
+#submit{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#personal-info{
+
+    margin-bottom: 100px;
+}
