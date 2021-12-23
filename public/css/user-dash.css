@@ -1,0 +1,147 @@
+.left{
+    background-color: black;
+    text-align: left;
+    width: 18%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.left img{
+    border-radius: 20%;
+}
+
+.left p{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#nid{
+    font-size: 1rem;
+    margin-top: -15px;
+    color: #979797;
+}
+
+.menu{
+    margin-top: 50%;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #979797;
+    font-size: 1.1rem;
+    padding-bottom: 25px;
+    display: block;
+    margin: 0% 0%;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu i{
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+#logout{
+    margin-top: 120%;
+}
+
+.mid{
+    width: 62%;
+    
+}
+
+.title{
+    margin: 0px 75px;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    border: 2px solid black;
+}
+
+.title h5{
+    color: #6b6a6a;
+}
+
+.title button{
+    float: right;
+    margin-top: -62px;
+    margin-right: 25px;
+    padding: 12px 35px;
+    
+}
+
+.mid .status{
+    margin: auto 75px;
+}
+
+.status .col{
+    margin: 20px 15px;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.status .col h5{
+    color: #6b6a6a;
+    margin-bottom: 20px;
+}
+
+#summary{
+    background-color: #F0F9FF;
+}
+
+#first{
+    background-color: #F1F4FD;
+}
+
+#second{
+    background-color: #FBFDE7;
+}
+
+
+.health{
+    margin: 25px 75px;
+}
+
+.hstatus{
+    margin: 20px 15px;
+    padding: 15px 25px;
+    font-weight: bold;
+    background-color: #F47174;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.hstatus .icon{
+    width: 25%;
+    font-size: 2.5rem;
+}
+
+.hstatus .text{
+    width: 75%;
+}
+
+
+.right{
+    width: 20%;
+}
+
+.right .brand{
+    margin-top: 50px;
+    margin-right: 20px;
+    border: 1px solid black;
+    background-color: #FFF6FB;
+    padding: 25px;
+}
+
+.right ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.right li{
+    margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+.custom-radio{
+    display: none;
+}
+
+.custom-label{
+    padding: 10px 12%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input[type="radio"]:checked + .custom-label{
+    background-color: #FEC92C;
+    border:1px solid #FEC92C;
+}

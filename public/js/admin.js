@@ -1,3 +1,5 @@
+
+
 $(document).ready(function (){
     $('#membertable').DataTable();
 } );
@@ -11,12 +13,12 @@ $(function(){
         $('#fdate').val($(this).data('fdose').substring(0,2));
         $('#fmonth').val($(this).data('fdose').substring(3,5));
         $('#fyear').val($(this).data('fdose').substring(6,));
-        $("#fdosedone").val($(this).data('fdosedone')).change();
+        $("#fdosedone").val($(this).data('fdosedone'));
 
         $('#sdate').val($(this).data('sdose').substring(0,2));
         $('#smonth').val($(this).data('sdose').substring(3,5));
         $('#syear').val($(this).data('sdose').substring(6,));
-        $("#sdosedone").val($(this).data('sdosedone')).change();
+        $("#sdosedone").val($(this).data('sdosedone'));
 
         $('#venue').val($(this).data('venue'));
         $('#status').val($(this).data('status'));
@@ -36,7 +38,7 @@ function update_member(){
   document.getElementById('submit').disabled = true;
   var ajax_request = new XMLHttpRequest();
 
-  ajax_request.open('POST', 'php/updatemember.php');
+  ajax_request.open('POST', 'updatemember.php');
 
   ajax_request.send(form_data);
 

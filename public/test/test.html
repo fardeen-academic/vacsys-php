@@ -1,0 +1,38 @@
+<html>
+<body>
+    <input type="radio" id="email">
+    <label for="email">Email</label>
+    <br>
+    <input type="radio" id="phone">
+    <label for="phone">Phone</label>
+    <br>
+    <input type="radio" id="url">
+    <label for="url">URL</label>
+    <br>
+    <button onclick="input()">Submit</button>
+    <script>
+        function input() {
+            let valid = false;
+            if (document.getElementById("email").checked) {
+                var input = prompt("Enter your Email");
+                var re = /\S+@\S+\.\S+/;
+                valid = re.test(input);
+            }else if (document.getElementById("phone").checked) {
+                var input = prompt("Enter your Phone");
+                var re = /^01\d{9}$/;
+                valid = re.test(input);
+            }else if (document.getElementById("url").checked) {
+                var input = prompt("Enter your URL");
+                var re = /^(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9]*\.[a-z]*/;
+                valid = re.test(input);
+            }
+
+            if (valid) {
+                window.alert("Valid input");
+            }else {
+                window.alert("Invalid input");
+            }
+        }
+    </script>
+</body>
+</html>
