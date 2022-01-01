@@ -32,6 +32,11 @@ if (mysqli_num_rows($result) > 0) {
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="../css/user-dash.css">
     <title>Document</title>
@@ -45,11 +50,11 @@ if (mysqli_num_rows($result) > 0) {
                 <p id="nid">NID: <?php echo $nid; ?></p>
             </div>
 
-            <div class="menu">
-                <a href="dashboard.php"><i class="fas fa-th-large"></i>Dashboard</a>
-                <a href="profile.php"><i class="fas fa-user"></i>Profile</a>
-                <a href="card.php"><i class="far fa-address-card"></i>Vaccine Card</a>
-                <a href="certificate.php"><i class="fas fa-certificate"></i>Certificate</a>
+            <div class="menu" id="menu">
+                <a href="dashboard.php" class="active link"><i class="fas fa-th-large"></i>Dashboard</a>
+                <a href="profile.php" class="link"><i class="fas fa-user"></i>Profile</a>
+                <a href="card.php" class="link"><i class="far fa-address-card"></i>Vaccine Card</a>
+                <a href="certificate.php" class="link"><i class="fas fa-certificate"></i>Certificate</a>
                 <a id="logout" href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </div>
             

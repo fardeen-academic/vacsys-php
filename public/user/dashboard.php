@@ -5,8 +5,8 @@ include 'dash-main.php';
 <?php
 
 //collecting dose data from sql
-$fd = "SELECT * FROM `first_dose` WHERE nid = '$nid'";
-$sd = "SELECT * FROM `second_dose` WHERE nid = '$nid'";
+$fd = "SELECT * FROM `first_dose` WHERE id = '$nid'";
+$sd = "SELECT * FROM `second_dose` WHERE id = '$nid'";
 $fdetails = mysqli_fetch_assoc(mysqli_query($conn, $fd));
 $sdetails = mysqli_fetch_assoc(mysqli_query($conn, $sd));
 $fdate = $fdetails['dose_date'];
@@ -14,16 +14,20 @@ if ($fdate == "") {
     $fdate = "Not Given";
 }
 $fdone = $fdetails['dose_done'];
-if ($fdone == "") {
+if ($fdone == "0") {
     $fdone = "No";
+}else{
+    $fdone = "Yes";
 }
 $sdate = $sdetails['dose_date'];
 if ($sdate == "") {
     $sdate = "Not Given";
 }
 $sdone = $sdetails['dose_done'];
-if ($sdone == "") {
+if ($sdone == "0") {
     $sdone = "No";
+}else{
+    $sdone = "Yes";
 }
 
 $status = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM `member` WHERE nid = '$nid'"));
@@ -71,7 +75,7 @@ if (mysqli_num_rows($result) > 0) {
     <div class="title">
         <h3>Welcome to VACSYS</h3>
         <h5>Dashboard</h5>
-        <button class="btn btn-dark">View Profile</button>
+        <a class="btn btn-dark" href="card.php">Vaccine Card</a>
     </div>
 
     <div class="status">
@@ -175,23 +179,6 @@ if (mysqli_num_rows($result) > 0) {
     
 </div>
 
-
-<script>
-    var hval = document.getElementsByClassName('hvalue');
-    var hstatus = document.getElementsByClassName('hstatus');
-    for (let i = 0; i < hval.length; i++)
-    {
-        if(hval[i].innerHTML == 'YES')
-        {
-            hstatus[i].style.backgroundColor = '#F47174';
-        }
-        else{
-            hstatus[i].style.backgroundColor = '#ACD1AF';
-        }
-    }
-</script>
-
-
-</div>
-</body>
-</html>
+<?php
+include 'footer.php';
+?>

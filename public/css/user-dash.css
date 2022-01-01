@@ -1,4 +1,4 @@
-.left{
+.left {
     background-color: black;
     text-align: left;
     width: 18%;
@@ -6,26 +6,26 @@
     padding-top: 5%;
 }
 
-.left img{
+.left img {
     border-radius: 20%;
 }
 
-.left p{
+.left p {
     font-size: 1.1rem;
     margin-top: 20px;
     font-weight: bold;
 }
-#nid{
+#nid {
     font-size: 1rem;
     margin-top: -15px;
     color: #979797;
 }
 
-.menu{
+.menu {
     margin-top: 50%;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: #979797;
     font-size: 1.1rem;
@@ -35,25 +35,28 @@
     border-radius: 5px;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: white;
 }
 
-.menu i{
+.menu i {
     margin-right: 15px;
     font-size: 1rem;
 }
 
-#logout{
+.menu .active {
+    color: white;
+}
+
+#logout {
     margin-top: 120%;
 }
 
-.mid{
+.mid {
     width: 62%;
-    
 }
 
-.title{
+.title {
     margin: 0px 75px;
     padding: 20px;
     font-weight: bold;
@@ -62,86 +65,187 @@
     border: 2px solid black;
 }
 
-.title h5{
+.title h5 {
     color: #6b6a6a;
 }
 
-.title button{
+.title a,
+.title button {
     float: right;
     margin-top: -62px;
     margin-right: 25px;
     padding: 12px 35px;
-    
 }
 
-.mid .status{
+.mid .status {
     margin: auto 75px;
 }
 
-.status .col{
+.status .col {
     margin: 20px 15px;
     padding: 15px 25px;
     font-weight: bold;
     border-radius: 10px;
 }
-.status .col h5{
+.status .col h5 {
     color: #6b6a6a;
     margin-bottom: 20px;
 }
 
-#summary{
-    background-color: #F0F9FF;
+#summary {
+    background-color: #f0f9ff;
 }
 
-#first{
-    background-color: #F1F4FD;
+#first {
+    background-color: #f1f4fd;
 }
 
-#second{
-    background-color: #FBFDE7;
+#second {
+    background-color: #fbfde7;
 }
 
-
-.health{
+.health {
     margin: 25px 75px;
 }
 
-.hstatus{
+.hstatus {
     margin: 20px 15px;
     padding: 15px 25px;
     font-weight: bold;
-    background-color: #F47174;
+    background-color: #f47174;
     width: 40%;
     border-radius: 5px;
 }
 
-.hstatus .icon{
+.hstatus .icon {
     width: 25%;
     font-size: 2.5rem;
 }
 
-.hstatus .text{
+.hstatus .text {
     width: 75%;
 }
 
-
-.right{
+.right {
     width: 20%;
 }
 
-.right .brand{
+.right .brand {
     margin-top: 50px;
     margin-right: 20px;
     border: 1px solid black;
-    background-color: #FFF6FB;
+    background-color: #fff6fb;
     padding: 25px;
 }
 
-.right ul{
+.right ul {
     list-style-type: none;
     margin-top: 20px;
 }
 
-.right li{
+.right li {
     margin-top: 10px;
+}
+
+.card-right {
+    width: 82%;
+    padding: 0px 5%;
+}
+
+.alert {
+    margin: auto 75px;
+}
+
+.cert-right {
+    width: 82%;
+    padding: 0px 5%;
+}
+.cert-right table {
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.cert-right td {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.solid {
+    border: 1px solid grey;
+}
+
+.dash {
+    border: 1px dashed grey;
+}
+.dash-no-left {
+    border: 1px dashed grey;
+    border-left: 0px;
+}
+.dash-no-right {
+    border: 1px dashed grey;
+    border-right: 0px;
+}
+.dash-top {
+    border-top: 1px dashed grey;
+}
+
+.watermark {
+    display: none;
+}
+
+@media print {
+    @page {
+        size: auto;
+        margin: 0px;
+        margin-top: 25px;
+    }
+    * {
+        -webkit-print-color-adjust: exact !important; /* Chrome, Safari, Edge */
+        color-adjust: exact !important; /*Firefox*/
+    }
+
+    .card-right {
+        width: 100%;
+        zoom: 70%;
+        margin: 0px;
+        font-size: small;
+    }
+    .cert-right {
+        width: 100%;
+        margin: 0px;
+        font-size: small;
+    }
+
+    .watermark {
+        display: block;
+        position: fixed;
+        z-index: -1;
+        align-self: center;
+        top: 35%;
+        zoom: 0.75;
+        opacity: 0.25;
+    }
+
+    .col {
+        padding: 20px;
+        border: 1px solid black;
+    }
+    .cert-right .col {
+        border: 0;
+    }
+    .alert {
+        width: 100%;
+        left: 0;
+        margin: auto 0;
+        background-color: #fc6567;
+        color: white;
+    }
+
+    .title {
+        border: 0;
+        margin: 0;
+    }
+    .logo .col {
+        border: 0;
+    }
 }
