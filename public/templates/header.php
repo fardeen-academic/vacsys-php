@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/single.css">
@@ -23,51 +24,58 @@
     <script src="/js/generate-vaccine-card.js"></script>
     <link rel="stylesheet" href="/icons/css/all.css">
     <style type="text/css" media="screen">
-
-        #vaccine-card-html{
+        #vaccine-card-html {
             visibility: hidden;
             padding: 0 30%;
             margin: 0;
-            }
-        #download-v-card-btn, #error{
-                visibility: visible;
-            }
-        header, .single-title-header, .body,footer{
-                background-color:#fff;
-            }
+        }
+
+        #download-v-card-btn,
+        #error {
+            visibility: visible;
+        }
+
+        header,
+        .single-title-header,
+        .body,
+        footer {
+            background-color: #fff;
+        }
     </style>
     <style type="text/css" media="print">
+        header,
+        .single-title-header,
+        #download-v-card-btn,
+        .body,
+        footer {
+            display: none;
+        }
 
-        header, .single-title-header,#download-v-card-btn, .body,footer{
-                display: none;
-            }
-        #vaccine-card-html{
-                background-color:#FFF;
-                margin: 3%;
-            }
+        #vaccine-card-html {
+            background-color: #FFF;
+            margin: 3%;
+        }
     </style>
 
 
     <title>VACSYS</title>
-    
+
 </head>
 
 <body>
 
     <!--Header -->
 
-    <header class="">  
+    <header class="">
         <nav class="navbar navbar-expand-md navbar-light">
-        <a  href="/" class="title navbar-brand">VACSYS</a>
-        <div class="navbar-link ms-auto">
-            <ul class="navbar-nav text-center">
-            <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
-            <li class="nav-item"><a href="status.php" class="nav-link">Status</a></li>
-            <li class="nav-item"><a href="vaccine-card.php" class="nav-link">Vaccine Card</a></li>
-            <li class="nav-item"><a href="certificate.php" class="nav-link">Certificate</a></li>  
-            <li class="nav-item"><a href="admin-login.php" target="_blank" class="nav-link btn btn-warning">Admin Portal</a></li>  
-            </ul>
-               
-        </div>
-          </nav>
+            <a href="/" class="title navbar-brand">VACSYS</a>
+            <div class="navbar-link ms-auto">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
+                    <li class="nav-item"><a href="/user/login.php" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="/admin/login.php" target="_blank" class="nav-link btn btn-warning">Admin Portal</a></li>
+                </ul>
+
+            </div>
+        </nav>
     </header>
