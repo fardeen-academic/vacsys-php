@@ -103,7 +103,7 @@ function validation(){
 
   //validate name
   var name = document.getElementById("name").value;
-  var reg = /^([a-zA-Z0-9. ]{2,})$/;
+  var reg = /^([a-zA-Z. ]{2,})$/;
   if (!reg.test(name)){
     document.getElementById('name-error').style.display = "block";
     valid = false;
